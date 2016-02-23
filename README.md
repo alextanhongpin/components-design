@@ -14,11 +14,16 @@
 11. **Events Binding**. When rerendering and binding new events, remember to unbind the previously binded events. The may prevent multiple same events firing. 
 12. **Events Delegation**. In JavaScript, it is possible to target a parent container and delegate the events to the children through bubbling. Binding the events every time after rerendering a view can be painful. Event delegation is a graceful way to bind events to new components.
 13. **Pure functions**. Components should be designed as pure functions - they should return the results without modifying the input.
+14. **Freeze/Unfreeze Components**. Each component functionalities can be enabled/disabled through a private method. This enables a greater control over the component or two interacting components (For example, two datepickers for picking a startDate and endDate. The endDateDatepicker should be disabled first, as the user have not selected the start date. It should be reenabled with the start date as the min date that can be selected).
+15. **Debouncing/Throttling**. Limit the amount of JavaScript you are executing based on DOM events for performance reasons using debouncing and throttling.
+16. **Responsive UI**. The UI should adapt to different screen sizes. The display on mobile should be touch intuitive, in contrast to the click intuitive and keyboard navigable components on the desktop.
+17. **WAI-ARIA for Desktop Components**. Improve the accessibilities of your components (keyboard navigable, screen reader) for users with disabilities).
+18. **Documentation**. Last but not least, a well documented component will help users understand how to use your component better. Provide use cases and examples using `.help()` method, or prepare a link to an online documentation.
 
 
 
+#### Bonus
+There are two ways to initialze a component.
 
-Different ways of initializing a component.
-
-1. render the html with the components markup first, then bind the events using js. options can be passed in through html5 data attributes
-2. render the html, then upon completion initialize the components using javascript and append the component to the view
+1. Render the html with the component's markup first, then bind the events using JavaScript. Options can be passed in the markup through html5 data-attributes.
+2. Render the html, then upon completion initialize the components using JavaScript and append the component to the current view.
