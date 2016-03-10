@@ -88,6 +88,9 @@
 + Last but not least, a well documented component will help users understand how to use your component better. 
 + Provide use cases and examples using `.help()` method, or prepare a link to an online documentation.
 
+### Living Components
+
+A concept that bridges UI and UX together. Living components are components that ...
 
 
 #### Bonus
