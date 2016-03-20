@@ -92,6 +92,10 @@
 
 A concept that bridges UI and UX together. Living components are components that ...
 
+### Remove Unused Views
+
+Do not use CSS to hide views - always remove them. Views such as `alert box`, `modal popups`, and `tab panels` should be destroyed, even if they have contents that required ajax calls to populate the view. For views such as `tab panels`, you can use a client side `router` to determine what subviews to display. 
+
 
 #### Bonus
 There are two ways to initialze a component.
