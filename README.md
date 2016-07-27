@@ -1,4 +1,4 @@
-# Guidelines for Builing Great JavaScript Components
+# Guidelines for Building Great JavaScript Components
 
 
 ### Reusable 
@@ -96,6 +96,12 @@ A concept that bridges UI and UX together. Living components are components that
 
 Do not use CSS to hide views - always remove them. Views such as `alert box`, `modal popups`, and `tab panels` should be destroyed, even if they have contents that required ajax calls to populate the view. For views such as `tab panels`, you can use a client side `router` to determine what subviews to display. 
 
+### Displaying Data
++ Components are meant to display data - if there are no data returned, use a placeholder
++ Placeholders can be a simple text, or a call-to-action leading to another view
++ When fetching a data through Ajax, display a loading placeholder
++ When the Ajax call returns an error, display a retry placeholder
++ There are limited items that can be displayed - so limit the results and show a load more button or infinite scrolling
 
 #### Bonus
 There are two ways to initialze a component.
