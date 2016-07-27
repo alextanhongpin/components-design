@@ -2,10 +2,19 @@
 
 
 ### Reusable 
++ Breakdown components into smaller parts to increase reusability.
++ Abstract logic by building higher-order-components.
 + Components should not be designed to be too specific - you might end up creating similar components with different use cases. E.g, an ordinary `Dropdown` component might end up rewritten as `DropdownSelect`, `DropdownMultiSelect`, `DropdownWithIcons`. 
 + Pass in `options` such as *allowMultipleSelection* or *showIcons* instead when initializing the components. The `Factory`, `Adapter` or `Decorator` pattern could be used to add enhancements to your component.
 
+### Atomic Design pattern
++ Break components into smaller parts - atoms, molecules, organisms, template and pages.
++ Split components by roles.
++ Build larger components by composition rather than inheritance.
+
 ### Isolated
++ Components are unique
++ Components can share the same styling, but have different logic implemented within (different states due to permissions)
 + Each component are standalone components and should have an unique identifier. 
 + Any changes in one component should not affect the other component on the same page. E.g, toggling a dropdown will not affect the other dropdowns on similar page. 
 + Components can interact with one another (data transfer, triggering changes in another component) through the `Observer` pattern.
@@ -16,6 +25,12 @@
 + Data that are immutables (private data) should be prefixed with an `_`, and mutable data should be accessible through getters and modified through getters. 
 + Methods like `.val()` might be more sensible for returning values that are mutables. 
 + In absence of the Data Models, always provide default values.
++ Components should not hold states
++ Components should only receive states from the parent
++ Build dumb components for a smarter system
++ Data models should be standardize so that the components are reusable
++ Data models should be validated
++ Components should be able to handle whatever data that is passed in to them (paginated data, normal state, empty state)
 
 
 ### Validations
@@ -25,6 +40,8 @@
 ### Naming Conventions 
 + Use clear and concise naming. 
 + `Block-Element-Modifier (BEM)` methodology has been proven to be helpful for naming components.
++ Atomic CSS can also be implemented.
++ Separate naming for fonts, layouts, positioning css, and js-hooks.
 
 ### Classes and Ids
 + Use `classes` for components that shares the same styling. Use `id` for very specific components (input fields, forms). 
@@ -50,14 +67,20 @@
 + Users need a cue on what is happening. 
 + Using `fadeIn` for displaying new views and `fadeOut` when removing delete views. 
 + Add a disabled state to buttons once user clicks on it, and change the label appropriately.
++ Animation when displaying data.
++ Animation when data is deleted.
++ Animation when new data is added.
++ Animation when data is updated.
 
 ### Asynchronous Components
 + If your components are fetching/modifying data constantly with your API, always ensure that one request is completed before fetching another. 
 + Prevent users from firing multiple request at the same time by either using a *dirty flag*, disabling the button or aborting the previous requests.
++ When submitting a form, remember to disable all fields and buttons when sending to the server.
 
 ### Events Binding
 + When rerendering and binding new events, remember to unbind the previously binded events. 
 + Events that are binded repeatedly will execute multiple times.
++ Events should be easily mounted/unmounted
 
 ### Events Delegation
 + In JavaScript, it is possible to target a parent container and delegate the events to the children through bubbling. 
