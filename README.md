@@ -31,7 +31,8 @@
 + Data models should be standardize so that the components are reusable
 + Data models should be validated
 + Components should be able to handle whatever data that is passed in to them (paginated data, normal state, empty state)
-
++ Components will receive a set of known inputs.
++ If you need to parse the model that will be passed in to the components, do it externally - do not let the components parse the model. This will increase specificity and reduce the reusability of the components.
 
 ### Validations
 + There should be a checking mechanism (possible a method) to validate the data models. 
