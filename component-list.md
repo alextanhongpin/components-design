@@ -80,6 +80,7 @@ Atoms are the simplest building block that is required to make up large componen
 + Checkbox
 + Close
 + Dropdown
++ Factory
 + Hint
 + Icon
 + Photo
@@ -89,7 +90,7 @@ Atoms are the simplest building block that is required to make up large componen
 + Menu
 + Modal
 + Paging
-+ Rdio
++ Radio
 + Rating
 + Select
 + Spinner
@@ -99,7 +100,9 @@ Atoms are the simplest building block that is required to make up large componen
 + Wrapper
 
 ### Molecules
-Molecules are a group of atoms, usually for a specific purpose. 
+Molecules are a group of atoms, usually meant to serve a specific purpose. They are made through recipes:
 
++ Card + DarkTheme = DarkCardTheme
 + Input + Label = InputWithLabel
 + Icon + Tooltip = IconWithTooltip
++ List + GridColumn = GridList
