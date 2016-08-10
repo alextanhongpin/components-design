@@ -76,6 +76,7 @@ Atoms are the simplest building block that is required to make up large componen
 
 + Button
 + Break
++ Card
 + Checkbox
 + Close
 + Dropdown
@@ -95,3 +96,10 @@ Atoms are the simplest building block that is required to make up large componen
 + Tag
 + Thumbnail
 + Tooltip
++ Wrapper
+
+### Molecules
+Molecules are a group of atoms, usually for a specific purpose. 
+
++ Input + Label = InputWithLabel
++ Icon + Tooltip = IconWithTooltip
