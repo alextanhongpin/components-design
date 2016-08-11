@@ -3,9 +3,17 @@
 
 ### Reusable 
 + Breakdown components into smaller parts to increase reusability.
-+ Abstract logic by building higher-order-components.
++ Each component should do one thing, and do it well
++ Which parts of the components are reusable - behaviours and style
++ Behaviours can be extracted by building higher-order-components
++ Styles can be shared by sharing similar CSS className
++ Components can have different styling but share the same logic
++ Standardize the models that components accepts to promote reusability
++ Serving a `specific` purpose and serving a `general` purpose are two different thing. Specific purpose: A dropdown that display a list of countries. General purpose: A dropdown displaying a list of items (variable), with keyboard navigation. 
++ In components, there are `variables` and `constants`. Your models should be the variable, and the component behaviours should be constant (See example above) 
 + Components should not be designed to be too specific - you might end up creating similar components with different use cases. E.g, an ordinary `Dropdown` component might end up rewritten as `DropdownSelect`, `DropdownMultiSelect`, `DropdownWithIcons`. 
 + Pass in `options` such as *allowMultipleSelection* or *showIcons* instead when initializing the components. The `Factory`, `Adapter` or `Decorator` pattern could be used to add enhancements to your component.
+
 
 ### Atomic Design pattern
 + Break components into smaller parts - atoms, molecules, organisms, template and pages.
