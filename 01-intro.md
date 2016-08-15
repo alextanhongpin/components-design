@@ -45,7 +45,6 @@ Forget what people say about *form over functions*. The user interface and user 
 6. When designing, it is important to extract parts that are reusable early.
 7. Standardization in design is important.
 8. Color scheme, typography, sizing, layouts, positional properties and styles can be standardized.
-9. 
 
 CSS Tips
 1. Use a standardized naming pattern like BEM (Block-Element-Modifier) or Atomic CSS to avoid conflicts in classnames.
