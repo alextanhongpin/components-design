@@ -3,6 +3,17 @@
 ### What are Components?
 > Components are predictable elements that produces an **expected output** when a set of **known inputs** are introduced into them. 
 
+The three major platform - iOS, Android and Web has their own list of predefined components. Given that such components already exists, why do we still need to create custom components?
+
+> Custom components are components tailored to deliver certain experience to the users.
+
+Visual branding is important. It's hard not to recognize Facebook from its famous `Like Button`, or Google's `Search Box`. Let's take a look at other examples:
+
+Airbnb, Foursquare, GoogleMap - Location-based applications that relies heavily on a map to help users search/navigate through results in a particular area.
+Facebook, Twitter - Mostly social media components that encourages users to share, connect and communicate with others.
+Medium, Quora - Delivers the writing experience on the web through their editor.
+Tumblr, Deviantart, Behance, Instagram - Focuses on images (display, edit) 
+
 ### Philosophy in Components Design
 
 - Predictable
@@ -12,6 +23,8 @@
 - Usable
 - Scalable
 - Conventional
+- Consistent
+- Productive
 
 ### Breakdown
 
@@ -34,11 +47,13 @@ Forget what people say about *form over functions*. The user interface and user 
 5. Layouts are part of `static components`, and are normally responsive grids. Can also be header-footer layout, main, aside, card deck, and list holder.
 6. When designing, it is important to extract parts that are reusable early.
 7. Standardization in design is important.
-8. Color scheme, typography, sizing, layouts, positional properties and styles can be standardized.
+8. Color scheme, typography, sizing, layouts, positional properties and styles should be standardized. Together they make up the visual brand of a company/product.
 
 CSS Tips
 1. Use a standardized naming pattern like BEM (Block-Element-Modifier) or Atomic CSS to avoid conflicts in classnames.
 2. Manage white spaces well.
 3. Place positional css (top, left e.t.c) only in the wrapper elements. Placing it in the component will discourage usability, as the components might be rendered differently in different pages.
 4. Do not hardcode the width and height - components should fit to parent width.
+
+
 
