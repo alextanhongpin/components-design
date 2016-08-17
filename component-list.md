@@ -8,6 +8,14 @@ Since there are different ways of categorizing the components, I will break them
 
 
 ## Categorized by Core Functionality
+
+1. **Navigational**. Responsible for user navigation thoughout the app/web. 
+2. **Selection**. Allow users to make selection, such as when applying filters to a result, or selecting date from a datepicker.
+3. **Presentational**. Responsible for displaying list or group of datas, charts and tables. 
+4. **Layouts**. Responsible for the page layouts and determining how the children components will fit into the layouts.
+5. **Getting inputs**. Responsible for acquiring data from users, in the form of form (pun intended) and inputs, and other means.
+6. **Informative**. Responsible for displaying information to users such as errors and toasts.
+
 ### Navigation
 + Accordion
 + Alphanumeric Filter Links
