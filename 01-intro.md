@@ -34,11 +34,15 @@ There are three major considerations to be taken in components design:
 - **Behaviour & Actions** - Describes the interaction between users and the components, and the expected outcome from the interaction)
 
 
-#### Aesthetic
+#### Visual Aesthetic
 
 > Design should be simple, and that is why it is so complicated.
 
-Forget what people say about *form over functions*. The user interface and user experience are meant to work together harmoniously. We should not sacrife usability over design, and vice versa. It is possible to have both good user experience and stunning user interface. 
+While it is important to have a User Interface (UI) that impresses users, it's more important to have a usable interface.
+
+> People ignore design that ignores people. 
+
+Let's apply Pareto's principle (80/20 rule) here. 80 percent of user experience are made up of 20 percent of the component's usability. The remaining 20 percent comes from the presentation. We should not sacrifice usability over design, and vice versa. It is possible to have both good user experience and stunning user interface. 
 
 1. Components can be static or dynamic.
 2. `Static components` are meant for display purpose only, or holds layouts information.
