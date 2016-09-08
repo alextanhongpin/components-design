@@ -1,7 +1,9 @@
 #Custom Elements
 
-```javascript
+With customElements, it is possible to create your own custom tags. E.g `<my-tag></my-tag>`.
 
+
+```javascript
 
 class TagComponent extends HTMLElement {
   constructor() {
@@ -25,7 +27,7 @@ class TagComponent extends HTMLElement {
   }
 }
 
-const Tag = document.registerElement('a-tag', TagComponent);
+const Tag = document.registerElement('my-tag', TagComponent);
 
 //CSS4 Grid Layout
 ```
