@@ -4,7 +4,7 @@ Component UI
 
 + Components can be `static` or `dynamic`.
 + Static components are also know as `containers` or `layouts`.
-+ Static components are meant for displaying purpose, or holds layout information.
++ Static components are meant for display purpose, or holds layout information.
 + Static components can be responsive layouts, wrappers, header-footer-layout, main, aside, split view, list with image, card deck and holders.
 + Styling should be placed in container.
 + Container can hold children component.
